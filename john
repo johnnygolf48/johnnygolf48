@@ -1,0 +1,29 @@
+{
+    "rules" : [
+        {
+            ruleName : ""
+            "allowExtensions" : [],
+            "urlScheme" : ["file", "http", "https", "etc."],
+            "fileNameRegex" : "",
+            "origin" : "local|server|any",
+            fileInspection: {"InspectionType": [true|false]},
+            "exceptions" : [
+                {
+                    "type" : "hostname|baseDomain|fileExtensions",
+                    "value" : "example.com"		
+                }
+            ],
+            "action" : "audit|block|notify",
+            "titleTemplate" : "",
+            "messageTemplate" : ""
+        }
+    ],
+
+    "alertConfig" : {
+        "url" : "",
+        "headers" : {},
+        "method" : "GET|POST",
+        "sendAsJson" : true|false,
+        "postData" : {}
+    }   
+}
